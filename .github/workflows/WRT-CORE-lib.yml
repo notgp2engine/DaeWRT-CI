@@ -188,7 +188,7 @@ jobs:
           
           generate_config && cat .config
           
-          $GITHUB_WORKSPACE/Scripts/Settings.sh
+          $GITHUB_WORKSPACE/Scripts/Settings-lib.sh
 
           make defconfig -j$(nproc) && make clean -j$(nproc)
 
